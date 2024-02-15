@@ -14,21 +14,21 @@
 
 <body class="font-poppins">
     <main class="bg-[#010313] min-h-screen bg-[url(./images/background.png)] bg-no-repeat bg-center">
-        <section id="playnow" class="h-full hidden">
+        <section id="home" class="h-full">
             <div class="text-center pt-64 space-y-8">
                 <h2 class="text-white font-anton text-[170px]">ALPHABET CLASH</h2>
                 <p class="text-2xl font-medium text-white">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-                <button class="btn px-6">Play Now</button>
+                <button onclick="play()" class="btn px-6">Play Now</button>
             </div>
         </section>
-        <section id="playground" >
+        <section id="playground" class="hidden" >
             <div class="flex flex-col items-center justify-center pt-24">
                 <!-- screen -->
                 <div class="artboard artboard-horizontal phone-6 bg-[#FFFFFFB2] border-[#010313CC] border-[16px] rounded-2xl">
                     <div class="flex justify-center">
                         <p class="bg-[#2F2941] rounded-b-xl pb-4 px-7 text-white text-[18px] font-medium ">Don't watch keyboard  while playing...</p>
                     </div>
-                    <h3 class="text-[128px] text-black text-center font-semibold">Y</h3>
+                    <h3 id="random" class="text-[128px] text-black text-center font-semibold">Y</h3>
                 </div>
                 <!-- keyboard -->
                 <div class="flex justify-center pt-24 text-black font-medium text-lg gap-2 my-1 w-full">
@@ -71,7 +71,7 @@
                        <img src="./images/Group 23.svg" alt="">
                        <span>5</span>
                       </button>
-                      <button class="btn bg-[#894189] rounded-3xl border-none px-8 text-white text-lg font-medium font-inter">
+                      <button class="btn bg-[#360490] rounded-3xl border-none px-8 text-white text-lg font-medium font-inter">
                         Score
                        <img src="./images/monetization_on.svg" alt="">
                        <span>0</span>
@@ -79,7 +79,16 @@
                   </div>
             </div>
         </section>
+        <section id="play-again" class="hidden flex justify-center text-center items-center min-h-screen">
+            <div class="bg-[#FFFFFF33] text-white space-y-3 py-11 px-12 rounded-2xl">
+                <h3 class="text-6xl font-bold">Score : 14</h3>
+                <button class="btn px-6 text-2xl font-semibold">Play Now</button>
+                <p class="text-lg font-medium">Practice will make you Pro</p>
+            </div>
+        </section>
     </main>
+    <script src="./javascript/style.js"></script>
+    <script src="./javascript/utility.js"></script>
 </body>
 
 </html>
