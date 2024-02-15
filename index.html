@@ -14,11 +14,69 @@
 
 <body class="font-poppins">
     <main class="bg-[#010313] min-h-screen bg-[url(./images/background.png)] bg-no-repeat bg-center">
-        <section id="playnow" class="h-full">
-            <div class="text-center pt-72 space-y-8">
+        <section id="playnow" class="h-full hidden">
+            <div class="text-center pt-64 space-y-8">
                 <h2 class="text-white font-anton text-[170px]">ALPHABET CLASH</h2>
                 <p class="text-2xl font-medium text-white">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
                 <button class="btn px-6">Play Now</button>
+            </div>
+        </section>
+        <section id="playground" >
+            <div class="flex flex-col items-center justify-center pt-24">
+                <!-- screen -->
+                <div class="artboard artboard-horizontal phone-6 bg-[#FFFFFFB2] border-[#010313CC] border-[16px] rounded-2xl">
+                    <div class="flex justify-center">
+                        <p class="bg-[#2F2941] rounded-b-xl pb-4 px-7 text-white text-[18px] font-medium ">Don't watch keyboard  while playing...</p>
+                    </div>
+                    <h3 class="text-[128px] text-black text-center font-semibold">Y</h3>
+                </div>
+                <!-- keyboard -->
+                <div class="flex justify-center pt-24 text-black font-medium text-lg gap-2 my-1 w-full">
+                    <kbd class="kbd font-inter">q</kbd>
+                    <kbd class="kbd font-inter">w</kbd>
+                    <kbd class="kbd font-inter">e</kbd>
+                    <kbd class="kbd font-inter">r</kbd>
+                    <kbd class="kbd font-inter">t</kbd>
+                    <kbd class="kbd font-inter">y</kbd>
+                    <kbd class="kbd font-inter">u</kbd>
+                    <kbd class="kbd font-inter">i</kbd>
+                    <kbd class="kbd font-inter">o</kbd>
+                    <kbd class="kbd font-inter">p</kbd>
+                  </div> 
+                  <div class="flex justify-center text-black font-medium text-lg gap-2 my-1 w-full">
+                    <kbd class="kbd font-inter">a</kbd>
+                    <kbd class="kbd font-inter">s</kbd>
+                    <kbd class="kbd font-inter">d</kbd>
+                    <kbd class="kbd font-inter">f</kbd>
+                    <kbd class="kbd font-inter">g</kbd>
+                    <kbd class="kbd font-inter">h</kbd>
+                    <kbd class="kbd font-inter">j</kbd>
+                    <kbd class="kbd font-inter">k</kbd>
+                    <kbd class="kbd font-inter">l</kbd>
+                  </div> 
+                  <div class="flex justify-center text-black  font-medium text-lg gap-2 my-1 w-full">
+                    <kbd class="kbd font-inter">z</kbd>
+                    <kbd class="kbd font-inter">x</kbd>
+                    <kbd class="kbd font-inter">c</kbd>
+                    <kbd class="kbd font-inter">v</kbd>
+                    <kbd class="kbd font-inter">b</kbd>
+                    <kbd class="kbd font-inter">n</kbd>
+                    <kbd class="kbd font-inter">m</kbd>
+                    <kbd class="kbd font-inter">/</kbd>
+                  </div>
+                  <!-- life and score -->
+                  <div class="flex justify-between w-3/5 pt-24">
+                    <button class="btn bg-[#894189] rounded-3xl border-none px-8 text-white text-lg font-medium font-inter">
+                        Life
+                       <img src="./images/Group 23.svg" alt="">
+                       <span>5</span>
+                      </button>
+                      <button class="btn bg-[#894189] rounded-3xl border-none px-8 text-white text-lg font-medium font-inter">
+                        Score
+                       <img src="./images/monetization_on.svg" alt="">
+                       <span>0</span>
+                      </button>
+                  </div>
             </div>
         </section>
     </main>
