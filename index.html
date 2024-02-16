@@ -32,57 +32,57 @@
                 </div>
                 <!-- keyboard -->
                 <div class="flex justify-center pt-24 text-black font-medium text-lg gap-2 my-1 w-full">
-                    <kbd class="kbd font-inter">q</kbd>
-                    <kbd class="kbd font-inter">w</kbd>
-                    <kbd class="kbd font-inter">e</kbd>
-                    <kbd class="kbd font-inter">r</kbd>
-                    <kbd class="kbd font-inter">t</kbd>
-                    <kbd class="kbd font-inter">y</kbd>
-                    <kbd class="kbd font-inter">u</kbd>
-                    <kbd class="kbd font-inter">i</kbd>
-                    <kbd class="kbd font-inter">o</kbd>
-                    <kbd class="kbd font-inter">p</kbd>
+                    <kbd id="q" class="kbd font-inter">q</kbd>
+                    <kbd id="w" class="kbd font-inter">w</kbd>
+                    <kbd id="e" class="kbd font-inter">e</kbd>
+                    <kbd id="r" class="kbd font-inter">r</kbd>
+                    <kbd id="t" class="kbd font-inter">t</kbd>
+                    <kbd id="y" class="kbd font-inter">y</kbd>
+                    <kbd id="u" class="kbd font-inter">u</kbd>
+                    <kbd id="i" class="kbd font-inter">i</kbd>
+                    <kbd id="o" class="kbd font-inter">o</kbd>
+                    <kbd id="p" class="kbd font-inter">p</kbd>
                   </div> 
                   <div class="flex justify-center text-black font-medium text-lg gap-2 my-1 w-full">
-                    <kbd class="kbd font-inter">a</kbd>
-                    <kbd class="kbd font-inter">s</kbd>
-                    <kbd class="kbd font-inter">d</kbd>
-                    <kbd class="kbd font-inter">f</kbd>
-                    <kbd class="kbd font-inter">g</kbd>
-                    <kbd class="kbd font-inter">h</kbd>
-                    <kbd class="kbd font-inter">j</kbd>
-                    <kbd class="kbd font-inter">k</kbd>
-                    <kbd class="kbd font-inter">l</kbd>
+                    <kbd id="a" class="kbd font-inter">a</kbd>
+                    <kbd id="s" class="kbd font-inter">s</kbd>
+                    <kbd id="d" class="kbd font-inter">d</kbd>
+                    <kbd id="f" class="kbd font-inter">f</kbd>
+                    <kbd id="g" class="kbd font-inter">g</kbd>
+                    <kbd id="h" class="kbd font-inter">h</kbd>
+                    <kbd id="j" class="kbd font-inter">j</kbd>
+                    <kbd id="k" class="kbd font-inter">k</kbd>
+                    <kbd id="l" class="kbd font-inter">l</kbd>
                   </div> 
                   <div class="flex justify-center text-black  font-medium text-lg gap-2 my-1 w-full">
-                    <kbd class="kbd font-inter">z</kbd>
-                    <kbd class="kbd font-inter">x</kbd>
-                    <kbd class="kbd font-inter">c</kbd>
-                    <kbd class="kbd font-inter">v</kbd>
-                    <kbd class="kbd font-inter">b</kbd>
-                    <kbd class="kbd font-inter">n</kbd>
-                    <kbd class="kbd font-inter">m</kbd>
-                    <kbd class="kbd font-inter">/</kbd>
+                    <kbd id="z" class="kbd font-inter">z</kbd>
+                    <kbd id="x" class="kbd font-inter">x</kbd>
+                    <kbd id="c" class="kbd font-inter">c</kbd>
+                    <kbd id="v" class="kbd font-inter">v</kbd>
+                    <kbd id="b" class="kbd font-inter">b</kbd>
+                    <kbd id="n" class="kbd font-inter">n</kbd>
+                    <kbd id="m" class="kbd font-inter">m</kbd>
+                    <kbd id="/" class="kbd font-inter">/</kbd>
                   </div>
                   <!-- life and score -->
                   <div class="flex justify-between w-3/5 pt-24">
                     <button class="btn bg-[#894189] rounded-3xl border-none px-8 text-white text-lg font-medium font-inter">
                         Life
                        <img src="./images/Group 23.svg" alt="">
-                       <span>5</span>
+                       <span id="life">5</span>
                       </button>
                       <button class="btn bg-[#360490] rounded-3xl border-none px-8 text-white text-lg font-medium font-inter">
                         Score
                        <img src="./images/monetization_on.svg" alt="">
-                       <span>0</span>
+                       <span id="score">0</span>
                       </button>
                   </div>
             </div>
         </section>
         <section id="play-again" class="hidden flex justify-center text-center items-center min-h-screen">
             <div class="bg-[#FFFFFF33] text-white space-y-3 py-11 px-12 rounded-2xl">
-                <h3 class="text-6xl font-bold">Score : 14</h3>
-                <button class="btn px-6 text-2xl font-semibold">Play Now</button>
+                <h3 class="text-6xl font-bold">Score : <span id="final-score">14</span></h3>
+                <button onclick="playAgain()" class="btn px-6 text-2xl font-semibold">Play Again</button>
                 <p class="text-lg font-medium">Practice will make you Pro</p>
             </div>
         </section>
